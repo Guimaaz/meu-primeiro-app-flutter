@@ -35,9 +35,9 @@ class Homepage extends StatelessWidget {
         children: [
           Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.end, // Centraliza verticalmente para baixo
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SizedBox(height: MediaQuery.of(context).size.height * 0.1), // Adiciona um espaço para descer a mensagem
+                SizedBox(height: MediaQuery.of(context).size.height * 0.1), 
                 Text(
                   "Every Purchase\n Will be Made\n With Pleasure",
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
@@ -58,7 +58,7 @@ class Homepage extends StatelessWidget {
                     // Adicione ação para o botão "Start Shopping" aqui
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(124, 125, 96, 161), // Altera a cor de fundo do botão "Start Shopping"
+                    backgroundColor: const Color.fromARGB(124, 125, 96, 161),
                     minimumSize: Size(450, 60),
                   ),
                   child: Text(
@@ -78,7 +78,7 @@ class Homepage extends StatelessWidget {
                             context,
                             MaterialPageRoute(builder: (context) => Learn()),
                           );
-                          // Adicione ação para o botão "Learn More" aqui
+                         
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.white,
@@ -94,8 +94,7 @@ class Homepage extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: ElevatedButton(
                         onPressed: () {
-                          // Navega para a página de login quando o botão "Login" é pressionado
-                          Navigator.push(
+                        Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => LoginPage()),
                           );
@@ -134,7 +133,7 @@ class Homepage extends StatelessWidget {
                     (context) => Home())
                 
                     );
-                  // Adicione ação para o ícone de casa aqui
+                
                 },
                 icon: Icon(Icons.home, color: Colors.white),
                 iconSize: 40,
@@ -162,7 +161,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-
+//página de compra
 class Buypage extends StatelessWidget{
 @override
 Widget build(BuildContext context){
@@ -176,7 +175,7 @@ Widget build(BuildContext context){
   );
   }
 }
-
+//página de mais informações
 class Learn extends StatelessWidget{
 @override
 Widget build(BuildContext context){
@@ -190,7 +189,7 @@ Widget build(BuildContext context){
   );
   }
 }
-
+// botão home
 class Home extends StatelessWidget{
 @override
 Widget build(BuildContext context){
