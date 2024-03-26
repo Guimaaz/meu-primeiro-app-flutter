@@ -55,7 +55,7 @@ class Homepage extends StatelessWidget {
                             context,
                             MaterialPageRoute(builder: (context) => Buypage()),
                           );
-                    // Adicione ação para o botão "Start Shopping" aqui
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(124, 125, 96, 161),
